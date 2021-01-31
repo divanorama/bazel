@@ -1148,7 +1148,7 @@ register_toolchains("//src/main/res:empty_rc_toolchain")
 http_archive(
     name = "com_github_grpc_grpc",
     patch_args = ["-p1"],
-    patches = ["//third_party/grpc:grpc_1.32.0.patch"],
+    patches = ["//third_party/grpc:grpc_1.32.0.patch", "//third_party/grpc:grpc_1.32.0_nixos.patch"],
     sha256 = "f880ebeb2ccf0e47721526c10dd97469200e40b5f101a0d9774eb69efa0bd07a",
     strip_prefix = "grpc-1.32.0",
     urls = [
